@@ -25,7 +25,7 @@ dat2 <- dat[which(dat$Date %in% date_list),]
 datetime <-  strptime(paste(as.character(dat2$Date), dat2$Time, sep=" "), "%Y-%m-%d %H:%M:%S")
 
 # plot 3 - to display
-plot(datetime, dat2$Sub_metering_1, type="l", 
+plot(datetime, dat2$Sub_metering_1, type="l", cex.label=0.8, cex.axis=0.8,
      xlab="", ylab="Energy sub metering")
 lines(datetime, dat2$Sub_metering_2, type="l", col="red")
 lines(datetime, dat2$Sub_metering_3, type="l", col="blue")
