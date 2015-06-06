@@ -38,7 +38,7 @@ legend("topright", lty=1, col=c("black","red","blue"),
 png("plot3.png", height=480, width=480)
 
 # Set the margins
-par(mar=c(3, 3, 2, 2))
+par(mar=c(3, 6, 2, 2))
 
 # do plot
 plot(datetime, dat2$Sub_metering_1, type="l", 
